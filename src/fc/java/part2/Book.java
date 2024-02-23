@@ -1,3 +1,5 @@
+package fc.java.part2;
+
 public class Book {
     public String title;
     public int price;
@@ -6,7 +8,7 @@ public class Book {
     public int page;
     public String isbn;
 
-//    public Book(String title, int price, String company, String author, int page, String isbn) {
+//    public fc.java.part2.Book(String title, int price, String company, String author, int page, String isbn) {
 //        this.title = title;
 //        this.price = price;
 //        this.company = company;

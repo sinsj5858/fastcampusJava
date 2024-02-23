@@ -1,3 +1,5 @@
+package fc.java.part2;
+
 public class MaxMinValue {
     public static void main(String[] args) {
         int a= 20;
