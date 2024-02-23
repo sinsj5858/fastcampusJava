@@ -1,5 +1,7 @@
 package fc.java.part3.model;
 
+import fc.java.part3.CarTest;
+
 public class CarDAO {
     //CRUD
 

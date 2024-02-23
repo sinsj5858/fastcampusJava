@@ -6,6 +6,7 @@ import fc.java.part3.model.CarDTO;
 import java.util.Scanner;
 
 public class CarTest {
+    public static int statcInt = 100;
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -34,14 +35,14 @@ public class CarTest {
         System.out.println(carSn+"\t"+carName+"\t"+carPrice+"\t"+carOwner+"\t"+carYear+"\t"+carType);
 
         CarDTO car = new CarDTO(carSn,carName,carPrice,carOwner,carYear,carType);
-        carPrint(car);
+        CarTest carTest = new CarTest();
+        carTest.carPrint(car);
 
         CarDAO carDAO = new CarDAO();
         carDAO.carInsert(car);
-
     }
 
-    public static void carPrint(CarDTO car){
+    public void carPrint(CarDTO car){
         System.out.println(car.carSn+"\t"+car.carName+"\t"+car.carPrice+"\t"+car.carOwner+"\t"+car.carYear+"\t"+car.carType);
     }
 }
